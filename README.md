@@ -20,3 +20,5 @@ gcloud docker -- push gcr.io/ultimate-hydra-288114/customer-app-gcloud:1.0
 kubectl apply -f deployment-customer-service.yml
 
 kubectl apply -f gcloud-spring-boot-ingress.yaml
+
+gcloud container clusters delete spring-boot --zone us-central1-c
